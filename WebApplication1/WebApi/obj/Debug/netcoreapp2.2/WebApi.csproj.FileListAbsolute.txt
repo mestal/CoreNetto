@@ -1,0 +1,14 @@
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\bin\Debug\netcoreapp2.2\WebApi.deps.json
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\bin\Debug\netcoreapp2.2\WebApi.runtimeconfig.json
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\bin\Debug\netcoreapp2.2\WebApi.runtimeconfig.dev.json
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\bin\Debug\netcoreapp2.2\WebApi.dll
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorAssemblyInfo.cache
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorAssemblyInfo.cs
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyInfoInputs.cache
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyInfo.cs
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\bin\Debug\netcoreapp2.2\WebApi.pdb
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.csprojAssemblyReference.cache
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.dll
+C:\Users\emesalp\Documents\GitHub\CoreNetto\WebApplication1\WebApi\obj\Debug\netcoreapp2.2\WebApi.pdb
