@@ -1,0 +1,27 @@
+
+npm install
+npm start => ng serve -o => open with default browser
+Stop  => Ctrl+c
+
+ES 2015 Modules ve Angular Modules ayrı şeyler
+
+Decorators
+    @
+    @Component
+
+Angular modules
+    @angular/core
+    @angular/animate
+    @angular/common
+    @angular/router
+
+all modules
+    www.npmjs.com/~angular
+
+
+http://getbootstrap.com
+http://fontawesome.com
+
+
+
+*ngif ve *ngfor BrowserModule ün içinde
