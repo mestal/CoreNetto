@@ -14,7 +14,7 @@ export class CustomerListComponent {
 
     constructor() {
         this.filteredCustomers = this.customers;
-        this.listFilter = 'rrr';
+        this.listFilter = '';
     }
     
     _listFilter: string;
@@ -33,38 +33,42 @@ export class CustomerListComponent {
         );
     }
 
-
-
     filteredCustomers: ICustomer[];
     customers: ICustomer[] = [
         {
             Name: "Işıl", 
             ImageUrl: "assets/images/saw.png",
-            BirthDate: "01.21.2011",
-            Height: 1.2
-            
+            BirthDate: "05.07.2005",
+            Height: 1.2,
+            Rating: 5
         },
         {
             Name: "Mert",
             ImageUrl: "assets/images/garden_cart.png",
-            BirthDate: "11.02.2017",
-            Height: 0.8826
+            BirthDate: "11.02.2000",
+            Height: 0.8826,
+            Rating: 5
         },
         {
             Name: "Erbil", 
             ImageUrl: "assets/images/xbox-controller.png",
-            BirthDate: "05.18.1979",
-            Height: 1.7
+            BirthDate: "01.18.1990",
+            Height: 1.7,
+            Rating: 5
         },
         {
             Name: "Mesut",
             ImageUrl: "assets/images/hammer.png",
-            BirthDate: "04.24.1983",
-            Height: 1.82
+            BirthDate: "11.15.1986",
+            Height: 1.82,
+            Rating: 3.5
         }
     ];
 
     toggleImage(): void {
         this.showImage = !this.showImage;
+    }
+    ratingClicked(message: string): void {
+        console.log(message);
     }
 }

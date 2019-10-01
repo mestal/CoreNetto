@@ -43,7 +43,8 @@
                         <td>{{ customer.Name | uppercase | convertToSpaces:'E':'L' }}</td>
                         <td>{{ customer.BirthDate | date:shortDate }}</td>
                         <td>{{ customer.Height | number: '1.2-3' }}</td>
-
+                        <td><comp-star [rating]='customer.Rating'
+                            (notify)='ratingClicked($event)'></comp-star></td>
                     </tr>
                 </tbody>
             </table>

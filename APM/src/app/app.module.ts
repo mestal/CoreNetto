@@ -4,12 +4,14 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CustomerListComponent } from './customers/customer-list.component';
 import { ConvertToSpaces } from './shared/convert-to-spaces.pipe';
+import { StarComponent } from './shared/star.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerListComponent,
-    ConvertToSpaces
+    ConvertToSpaces,
+    StarComponent
   ],
   imports: [
     BrowserModule,
