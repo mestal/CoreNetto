@@ -36,3 +36,5 @@ Bilt-in pipes
     json, slice
 
 There is another course Angular Component Communication.
+
+Data veya Logici componentlerin üstünden paylaşmak istiyorsak servisler kullanırız.
