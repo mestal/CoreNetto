@@ -28,11 +28,21 @@ namespace WebApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<CoreNetContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors("MyPolicy");
+            //app.UseCors("AllowMyOrigin");
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

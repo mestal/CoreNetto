@@ -40,10 +40,10 @@
                                 [style.margin.px]='imageMargin'
                             >
                         </td>
-                        <td>{{ customer.Name | uppercase | convertToSpaces:'E':'L' }}</td>
-                        <td>{{ customer.BirthDate | date:shortDate }}</td>
-                        <td>{{ customer.Height | number: '1.2-3' }}</td>
-                        <td><comp-star [rating]='customer.Rating'
+                        <td>{{ customer.name | uppercase | convertToSpaces:'E':'L' }}</td>
+                        <td>{{ customer.birthDate | date:shortDate }}</td>
+                        <td>{{ customer.height | number: '1.2-3' }}</td>
+                        <td><comp-star [rating]='customer.rating'
                             (notify)='ratingClicked($event)'></comp-star></td>
                     </tr>
                 </tbody>

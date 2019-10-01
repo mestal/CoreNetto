@@ -29,12 +29,13 @@ export class CustomerListComponent implements OnInit {
     performFilter(filterBy: string): ICustomer[] {
         filterBy = filterBy.toLocaleLowerCase();
         return this.customers.filter((customer: ICustomer) => 
-            customer.Name.toLocaleLowerCase().indexOf(filterBy) !== -1
+            customer.name.toLocaleLowerCase().indexOf(filterBy) !== -1
         );
     }
 
     filteredCustomers: ICustomer[];
     customers: ICustomer[];
+    errorMessage: string;
 
     toggleImage(): void {
         this.showImage = !this.showImage;
@@ -45,7 +46,14 @@ export class CustomerListComponent implements OnInit {
 
     ngOnInit(): void {
         console.log("OnInit calleddd");
-        this.customers = this.customerService.getCustomers();
-        this.filteredCustomers = this.customers;
+        this.customerService.getCustomers().subscribe(
+            {
+                next: customers => {
+                    this.filteredCustomers = customers;
+                    this.customers = customers;
+                },
+                error: err => this.errorMessage = err
+            }
+        );
     }
 }

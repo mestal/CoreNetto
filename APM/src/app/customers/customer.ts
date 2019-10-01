@@ -1,7 +1,8 @@
 export interface ICustomer {
-    Name: string;
-    ImageUrl: string;
-    BirthDate: string;
-    Height: number,
-    Rating: number
+    id: string,
+    name: string;
+    imageUrl: string;
+    birthDate: string;
+    height: number,
+    rating: number
 }

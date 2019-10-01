@@ -15,5 +15,14 @@ namespace WebApi.Models
         [Required]
         [Column(TypeName="nvarchar(100)")]
         public string Name { get; set; }
+
+        [Column(TypeName = "nvarchar(300)")]
+        public string ImageUrl { get; set; }
+
+        public DateTime BirthDate { get; set; }
+
+        public decimal Height { get; set; }
+
+        public decimal Rating { get; set; }
     }
 }
