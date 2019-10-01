@@ -28,10 +28,11 @@
                         </th>
                         <th>Name</th>
                         <th>Birth Date</th>
+                        <th>Height</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let customer of customers">
+                    <tr *ngFor="let customer of filteredCustomers">
                         <td>
                             <img *ngIf='showImage' 
                                 [src]='customer.ImageUrl'
@@ -39,7 +40,7 @@
                                 [style.margin.px]='imageMargin'
                             >
                         </td>
-                        <td>{{ customer.Name | uppercase }}</td>
+                        <td>{{ customer.Name | uppercase | convertToSpaces:'E':'L' }}</td>
                         <td>{{ customer.BirthDate | date:shortDate }}</td>
                         <td>{{ customer.Height | number: '1.2-3' }}</td>
 

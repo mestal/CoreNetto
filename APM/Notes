@@ -29,3 +29,10 @@ http://fontawesome.com
 DOM Events
 developer.mozilla.org/en-US/docs/Web/Events
 
+Sadece o componentte kullanabilecek style verilebilir ya da direk css dosyası verilebilir.
+
+Bilt-in pipes
+    date
+    number, decimal, percent, currency
+    json, slice
+
