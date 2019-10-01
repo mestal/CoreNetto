@@ -21,8 +21,9 @@
                 <thead>
                     <tr>
                         <th>
-                            <button class="btn btn-primary">
-                                Show Image
+                            <button class="btn btn-primary"
+                                (click)='toggleImage()'>
+                                {{ showImage ? 'Hide' : 'Show'}} Image
                             </button>
                         </th>
                         <th>Name</th>
@@ -30,7 +31,13 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let customer of customers">
-                        <td></td>
+                        <td>
+                            <img *ngIf='showImage' 
+                                [src]='customer.ImageUrl'
+                                [style.width.px]='imageWidth'
+                                [style.margin.px]='imageMargin'
+                            >
+                        </td>
                         <td>{{ customer.Name }}</td>
 
                     </tr>
