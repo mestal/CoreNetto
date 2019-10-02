@@ -4,12 +4,20 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'pm-root',
-  template: `<div><h2>{{ pageTitle }}</h2>
-            <comp-customers></comp-customers>
-            </div>`
+  template: `<nav class='navbar navbar-expand navbar-light bg-light'>
+              <a class='navbar-brand'>{{pageTitle}}</a>
+              <ul class='nav nav-pills'>
+                <li><a class='nav-link' [routerLink]="['/welcome']">Home</a></li>
+                <li><a class='nav-link' [routerLink]="['/customers']">Customer List</a></li>
+              </ul>
+            </nav>
+            <div>
+              <router-outlet></router-outlet>
+            </div>
+            `
 })
 export class AppComponent {
-  pageTitle: string = "Denem111e";
+  pageTitle: string = "Customer Management";
 }
 
 

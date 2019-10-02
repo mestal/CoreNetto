@@ -3,7 +3,7 @@ import { ICustomer } from './customer';
 import { CustomerService } from './customer.service';
 
 @Component({
-    selector: 'comp-customers',
+    //selector: 'comp-customers',
     templateUrl: './customer-list.component.html',
     styleUrls: ['./customer-list.component.css']
 })
@@ -46,7 +46,7 @@ export class CustomerListComponent implements OnInit {
 
     ngOnInit(): void {
         console.log("OnInit calleddd");
-        this.customerService.getCustomers().subscribe(
+        var sub = this.customerService.getCustomers().subscribe(
             {
                 next: customers => {
                     this.filteredCustomers = customers;
