@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ICustomer } from './customer';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -13,5 +13,9 @@ export class CustomerService {
 
     getCustomers(): Observable<ICustomer[]> {
         return this.http.get<ICustomer[]>(this.customerUrl);
+    }
+
+    getCustomer(id: string): Observable<ICustomer> {
+        return this.http.get<ICustomer>(this.customerUrl + "/" + id);
     }
 }
