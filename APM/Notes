@@ -38,3 +38,8 @@ Bilt-in pipes
 There is another course Angular Component Communication.
 
 Data veya Logici componentlerin üstünden paylaşmak istiyorsak servisler kullanırız.
+
+
+Creating new module
+    ng g m customers/customer --flat
+        --flat for not creating folder
