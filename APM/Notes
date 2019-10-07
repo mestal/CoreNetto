@@ -47,3 +47,5 @@ Creating new module
 Eğer root module değilse ngif ve ngfor için commonmodule eklenmeli (browser module değil)
 
 Shared module de CommonModule ve FormsModule re export edilerek, diğer modüllerde kullanımı sağlanabilir.
+
+BrowserModule imports and exports CommonModule, so when you import BrowserModule you dont need to import CommonModule.
