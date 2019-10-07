@@ -43,3 +43,7 @@ Data veya Logici componentlerin üstünden paylaşmak istiyorsak servisler kulla
 Creating new module
     ng g m customers/customer --flat
         --flat for not creating folder
+
+Eğer root module değilse ngif ve ngfor için commonmodule eklenmeli (browser module değil)
+
+Shared module de CommonModule ve FormsModule re export edilerek, diğer modüllerde kullanımı sağlanabilir.
